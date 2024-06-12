@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "15e08531-870f-4256-b278-3fca009de033",
+		"name": "Imgur API Oauth2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18453091"
+	},
+	"item": [
+		{
+			"name": "Image Upload",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://api.imgur.com/oauth2/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://api.imgur.com/oauth2/authorize",
+							"type": "string"
+						},
+						{
+							"key": "authRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": true,
+									"send_as": "request_url"
+								}
+							],
+							"type": "any"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://oauth.pstmn.io/v1/callback",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID "
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/E:/API_Testing/New folder/Postman Variables.png"
+						},
+						{
+							"key": "type",
+							"value": "image",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Simple upload",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is a simple image upload in Imgur",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.imgur.com/3/upload",
+					"protocol": "https",
+					"host": [
+						"api",
+						"imgur",
+						"com"
+					],
+					"path": [
+						"3",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
