@@ -2,9 +2,9 @@
 
 #### Imgur API is the Example for OAuth 2.0 Example
 
-### Where Client Request is sent and Authorized in Google Account for Spcific User
+### Where Client Request is sent and Authorized in Google Account for Specific User
 
-### It will Grant Tempory Access with Client id and Client Secret
+### It will Grant Access with Client id and Client Secret
 
 ### from Postman we need to give Client id and Client secreat to Generate Token
 
